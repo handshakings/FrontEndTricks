@@ -1,0 +1,346 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+<style>
+    ul {
+        width:100%;
+        padding:0px;
+        margin-bottom:0px;
+    }
+        ul li {
+            display: inline-block;
+            height: 90px;
+            margin: 5px 1px 0 0;
+            width:200px;
+            text-indent: 35px;
+            position: relative;
+            text-align:justify;
+            padding-left:10px;
+        }
+        @media only screen and (min-width: 1100px) {
+            ul li {
+                width: 270px;
+            }
+        }
+            ul li:before {
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                left: -0px;
+                border-style: solid;
+                border-width: 45px 0px 45px 35px;
+                border-color: transparent transparent transparent #fff;
+                z-index: 0;
+            }
+            ul li:first-child:before {
+                border-color: transparent;
+            }   
+
+
+    
+    .one:after {
+        line-height: 10px;
+        content: " ";
+        position: absolute;
+        top:0px;
+        right: -35px;
+        border-style: solid;
+        border-width: 45px 0 45px 35px;
+        border-color: transparent transparent transparent #66baa5;
+        z-index: 10;
+    }
+    @supports (-moz-appearance:none) {
+        .one:after {
+            line-height: 10px;
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -69px;
+            border-style: solid;
+            border-width: 45px 0 45px 35px;
+            border-color: transparent transparent transparent #66baa5;
+            z-index: 10;
+        }
+    }
+
+    .two:after {
+            line-height: 10px;
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -35px;
+            border-style: solid;
+            border-width: 45px 0 45px 35px;
+            border-color: transparent transparent transparent #3382ac;
+            z-index: 10;
+        }
+    @supports (-moz-appearance:none) {
+        .two:after {
+            line-height: 10px;
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -69px;
+            border-style: solid;
+            border-width: 45px 0 45px 35px;
+            border-color: transparent transparent transparent #3382ac;
+            z-index: 10;
+        }
+    }
+
+        
+
+    .three:after {
+            line-height: 10px;
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -35px;
+            border-style: solid;
+            border-width: 45px 0 45px 35px;
+            border-color: transparent transparent transparent #e9886d;
+            z-index: 10;
+        }
+    @supports (-moz-appearance:none) {
+        .three:after {
+            line-height: 10px;
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -69px;
+            border-style: solid;
+            border-width: 45px 0 45px 35px;
+            border-color: transparent transparent transparent #e9886d;
+            z-index: 10;
+        }
+    }
+
+    .four:after {
+            line-height: 10px;
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -35px;
+            border-style: solid;
+            border-width: 45px 0 45px 35px;
+            border-color: transparent transparent transparent #efc375;
+            z-index: 10;
+        }
+    @supports (-moz-appearance:none) {
+        .four:after {
+            line-height: 10px;
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -69px;
+            border-style: solid;
+            border-width: 45px 0 45px 35px;
+            border-color: transparent transparent transparent #efc375;
+            z-index: 10;
+        }
+    }
+
+
+
+        .navtext {
+            color: white;
+            float: left;
+            margin-top: 10px;
+            font-size: x-large;
+        }
+
+        .navsmall {
+            float: left;
+            color: white;
+            font-size: medium;
+        }
+
+
+
+        .mydiv div {
+            font-size: small;
+            height: 50px;
+        }
+
+            .mydiv div:nth-child(1) {
+                background-color: #e2f1ee;
+                width: 23.6%;
+                margin-left: 4px;
+            }
+
+            .mydiv div:nth-child(2) {
+                background-color: #d5e7f1;
+                width: 23.6%;
+                margin-left: 4px;
+            }
+
+            .mydiv div:nth-child(3) {
+                background-color: #f8dcd4;
+                width: 23.6%;
+                margin-left: 4px;
+            }
+
+            .mydiv div:nth-child(4) {
+                background-color: #fbf1dc;
+                width: 23.6%;
+                margin-left: 4px;
+            }
+
+        @media only screen and (min-width: 1100px) {
+            .mydiv div:nth-child(1), .mydiv div:nth-child(2), .mydiv div:nth-child(3), .mydiv div:nth-child(4) {
+                width: 23.8%;
+                margin-left: 4.2px;
+            }
+        }
+
+
+
+        .rotate {
+            width: 10px;
+            transform: rotate(-90deg);
+            text-align: center;
+            margin-top: 190px;
+            font-size: x-large;
+        }
+
+
+
+        .r {
+            padding-left: 88px;
+            padding-right: 0px;
+        }
+
+        @media only screen and (min-width: 1100px) {
+            .r {
+                padding-left: 118px;
+                padding-right: 0px;
+            }
+        }
+
+
+
+
+
+    .divflex{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    .pointer {
+        width: 200px;
+        height: 40px;
+        position: relative;
+        background: red;
+    }
+
+        .pointer:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 70px solid white;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+
+        .pointer:before {
+            content: "";
+            position: absolute;
+            right: -70px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 70px solid red;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+</style>
+</head>
+<body>
+    <div class="divflex">
+        <div class="pointer"></div>
+        <div class="pointer"></div>
+        <div class="pointer"></div>
+        <div class="pointer"></div>
+        <div class="pointer"></div>
+    </div>
+
+    <div class="container-fluid p-3">
+
+        <div class="text-center"><h2>Process Flow Diagram Template for PowerPoint</h2></div>
+        <div class="row mt-0" style="padding-right:50px; padding-left:30px;" align="center">
+            <ul>
+                <li class="one" style="background-color: #66baa5; padding-left:0px">
+                    <strong class="navtext">Phase 1</strong><br />
+                    <small class="navsmall">This is a sample text.</small>
+                </li>
+                <li class="two" style="background-color: #3382ac;">
+                    <strong class="navtext">Phase 2</strong><br />
+                    <small class="navsmall">This is a sample text.</small>
+                </li>
+                <li class="three" style="background-color: #e9886d;">
+                    <strong class="navtext">Phase 3</strong><br />
+                    <small class="navsmall">This is a sample text.</small>
+                </li>
+                <li class="four" style="background-color: #efc375;">
+                    <strong class="navtext">Phase 4</strong><br />
+                    <small class="navsmall">This is a sample text.</small>
+                </li>
+            </ul>
+        </div>
+        <div class="row r" >
+            <div class="col-11 pr-0 mr-0">
+
+                <div class="row mt-1 mr-0 mydiv">
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                </div>
+                <div class="row mt-1 mr-0 mydiv" >
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                </div>
+                <div class="row mt-1 mr-0 mydiv" >
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                </div>
+                <div class="row mt-1 mr-0 mydiv" >
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    
+                </div>
+                <div class="row mt-1 mr-0 mydiv" >
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    <div class="d-flex align-items-center">This is a sample text. Insert your desired text here.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                </div>
+                <div class="row mt-1 mr-0 mydiv">
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                    <div class="d-flex align-items-center">This is a sample text.</div>
+                </div>
+            </div>
+
+            <div class="col-1">
+                <div class="rotate">ACTIVITIES</div>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+</html>
